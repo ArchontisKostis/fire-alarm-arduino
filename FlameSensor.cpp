@@ -5,7 +5,7 @@ class FlameSensor {
   private:
     byte pin;
     int reading;
-    int sensitivity;
+    int sensitivity = 1022;
 
   public:
     FlameSensor(byte pin) {
@@ -18,9 +18,8 @@ class FlameSensor {
 
     bool fireDetected() {   
       update();   
-      if(reading < sensitivity){
+      if(reading < sensitivity)
         return true;
-      }
       return false;
     } 
 
