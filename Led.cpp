@@ -2,7 +2,7 @@
 
 class Led {
   private:
-  byte pin;
+    byte pin;
 
   public:
     Led(byte pin) {
@@ -15,11 +15,11 @@ class Led {
       off();
     }
 
-  void on() {
-    digitalWrite(pin, HIGH);
-  }
+    void on() {
+      digitalWrite(pin, HIGH);
+    }
 
-  void off() {
-    digitalWrite(pin, LOW);   
-  }
+    void off() {
+      digitalWrite(pin, LOW);   
+    }
 };
