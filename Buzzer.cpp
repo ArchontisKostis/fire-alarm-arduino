@@ -7,7 +7,7 @@ class Buzzer {
     ezBuzzer buzzer;
 
   public:
-  Buzzer::Buzzer(int pin):buzzer(pin) {
+  Buzzer::Buzzer(byte pin):buzzer(pin) {
     this->pin = pin;
   }
   

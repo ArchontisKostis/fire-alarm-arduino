@@ -1,28 +1,21 @@
 #include "FlameSensor.cpp"
-#include "Led.cpp"
-#include "Buzzer.cpp"
 #include "Potentiometer.cpp"
-#include "Button.cpp"
+#include "Alarm.cpp"
 #include "SevSeg.h"
+
+#define BUZZER_PIN 11
+#define RED_LED_PIN 12
+#define BLUE_LED_PIN 13
 
 SevSeg sevseg;  
 FlameSensor flameSensor(A1);
-Led redLed(12);
-Led blueLed(13);
-Buzzer buzzer(11);
 Potentiometer potentiometer(A0);
-Button overrideButton(10);
+Alarm alarm(BUZZER_PIN, RED_LED_PIN, BLUE_LED_PIN);
+
 
 void setup() {
   Serial.begin(9600);
-  byte numDigits = 1;
-  byte digitPins[] = {};
-  byte segmentPins[] = {6, 5, 2, 3, 4, 7, 8, 9};
-  bool resistorsOnSegments = true;
-
-  byte hardwareConfig = COMMON_CATHODE; 
-  sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
-  sevseg.setBrightness(100);
+  initializeDigitDisplay();
 }
 
 void loop() {
@@ -33,23 +26,22 @@ void loop() {
 
   if(flameSensor.fireDetected()) {
     sevseg.setChars("F");
-    turnOnAlarm();
+    alarm.setOnAlarm();
   }
   else {
     sevseg.setNumber(potentiometerDisplayValue);
-    turnOffAlarm();
+    alarm.setOffAlarm();
   }
   sevseg.refreshDisplay();
 }
 
-void turnOnAlarm() {
-  redLed.on();
-  blueLed.off();
-  buzzer.ring();
-}
+void initializeDigitDisplay() {
+  byte numDigits = 1;
+  byte digitPins[] = {};
+  byte segmentPins[] = {6, 5, 2, 3, 4, 7, 8, 9};
+  bool resistorsOnSegments = true;
 
-void turnOffAlarm() {
-  redLed.off();
-  blueLed.on();
-  buzzer.stopRinging();
+  byte hardwareConfig = COMMON_CATHODE; 
+  sevseg.begin(hardwareConfig, numDigits, digitPins, segmentPins, resistorsOnSegments);
+  sevseg.setBrightness(100);
 }
