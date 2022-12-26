@@ -20,6 +20,10 @@ class DigitDisplay {
       display.setChars(characterToShow);
     }
 
+    void showFireWarning() {
+      setChars("F");
+    }
+
     void refresh() {
       display.refreshDisplay();
     }
