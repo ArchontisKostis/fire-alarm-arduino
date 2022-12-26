@@ -10,17 +10,16 @@
 #define POTENTIOMETER_PIN A0
 
 // --- DISPLAY INITIALIZATION DATA ---
-byte numDigits = 1;
-byte digitPins[] = {};
-byte segmentPins[] = {6, 5, 2, 3, 4, 7, 8, 9};
-bool resistorsOnSegments = true;
-// ------------------------------------
+const byte numDigits = 1;
+const byte digitPins[] = {};
+const byte segmentPins[] = {6, 5, 2, 3, 4, 7, 8, 9};
+const bool resistorsOnSegments = true;
+// -----------------------------------
 
 FlameSensor flameSensor(FLAME_SENSOR_PIN);
 Potentiometer potentiometer(POTENTIOMETER_PIN);
 Alarm alarm(BUZZER_PIN, RED_LED_PIN, BLUE_LED_PIN);
 DigitDisplay digitDisplay(COMMON_CATHODE, numDigits, digitPins, segmentPins, resistorsOnSegments);
-
 
 void setup() {
   Serial.begin(9600);
@@ -28,16 +27,14 @@ void setup() {
 
 void loop() {
   int sensitivity = potentiometer.getValue();
-  int sensitivityDisplayValue = sensitivity / 113;
-
   flameSensor.setSensitivity(sensitivity);
 
   if(flameSensor.fireDetected()) {
-    digitDisplay.setChars("F");
+    digitDisplay.showFireWarning();
     alarm.setOnAlarm();
   }
   else {
-    digitDisplay.setNumber(potentiometerDisplayValue);
+    digitDisplay.setNumber(sensitivity / 113);
     alarm.setOffAlarm();
   }
   digitDisplay.refresh();
