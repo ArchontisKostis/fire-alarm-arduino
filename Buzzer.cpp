@@ -7,17 +7,15 @@ class Buzzer {
     ezBuzzer buzzer;
 
   public:
-  Buzzer::Buzzer(byte pin):buzzer(pin) {
+  Buzzer(byte pin):buzzer(pin) {
     this->pin = pin;
   }
   
   void ring() {
-    digitalWrite(this->pin, 50); 
+    digitalWrite(this->pin, HIGH); 
   }
 
   void stopRinging() {
     digitalWrite(this->pin, LOW); 
   }
-
-
 };
