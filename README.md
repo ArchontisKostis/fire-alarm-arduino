@@ -1,10 +1,14 @@
-# Fire Alarm System
-This project is a simple yet effective fire alarm system that uses an Arduino board and a few key components to detect flames and alert users of potential dangers. \
-This is my first project with Arduino and Embedded Systems.
+![g3869](https://user-images.githubusercontent.com/77233507/209699623-383fafbc-c033-4e37-b3c7-a65f35f014ef.png)
+# Arduino Fire Alarm System
+This project is a simple yet effective fire alarm system that uses an Arduino board and a few key components to detect flames and alert the user of potential danger.
+## Photos
+![1672155059762](https://user-images.githubusercontent.com/77233507/209700298-98c71b0c-d17a-46d9-be0e-72b7d670e36f.jpg)
+![1672155059772](https://user-images.githubusercontent.com/77233507/209700299-f2a272f1-5ade-4fc9-844b-7d535a48f43b.jpg)
+
 
 ## Hardware Components
 ### Main Components
-- Arduino board (I used Arduino UNO R3 for this project)
+- Arduino board (I used an Arduino UNO R3 for this project)
 - Flame sensor: capable of detecting infrared light with a wavelength ranging from 700nm to 1000nm, allowing it to detect a flame within a certain radius
 - Potentiometer: allows the user to fine-tune the sensitivity of the alarm, ensuring that it triggers at the appropriate distance
 - 7-segment display: displays the current sensitivity value on a scale from 0 (the alarm will never trigger) to 9 (the alarm will be triggered when there is fire detected at the maximum distance that the sensor can detect). When the alarm is triggered, the display shows the letter "F"
@@ -55,7 +59,7 @@ To clone and upload this repository to an Arduino board, follow these steps:
 
 9. Click the "Upload" button in the Arduino IDE to upload the code to your Arduino board.
 
-Once the upload process is complete, the code will be running on your Arduino board and the fire alarm system will be ready for use.
+Once the upload process is complete, the code will be running on your Arduino board and the fire alarm system will be ready for use (assuming you have assembled the hardware components according to the circuit diagram).
 
 
 ## Further Reading
