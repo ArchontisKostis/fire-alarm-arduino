@@ -62,6 +62,8 @@ To clone and upload this repository to an Arduino board, follow these steps:
 
 Once the upload process is complete, the code will be running on your Arduino board and the fire alarm system will be ready for use (assuming you have assembled the hardware components according to the circuit diagram).
 
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 💻 Further Reading
 For more information on using Git and Github, you can refer to the [Git Documentation](https://git-scm.com/doc) and the [Github Documentation](https://docs.github.com/). \
