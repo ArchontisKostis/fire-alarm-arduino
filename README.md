@@ -17,9 +17,12 @@ This project is a simple yet effective fire alarm system that uses an Arduino bo
 - Active buzzer: emits a loud, high-pitched sound when the alarm is triggered, alerting users of potential danger
 
 ### Secondary Components
-- 2 220Ω resistors (for the LEDs)
-- 1 330Ω resistor (for the flame sensor)
-- 1 1kΩ resistor (for the 7-segment display)
+- Breadboard
+- Jumper Cables (Male-to-Male)
+- x2 220Ω resistors (for the LEDs)
+- x1 330Ω resistor (for the flame sensor)
+- x1 1kΩ resistor (for the 7-segment display)
+
 
 ## ⚙️ Functionality
 When the fire alarm system is powered on, the blue LED is lit and the 7-segment display shows the current sensitivity value. The user can adjust the sensitivity of the alarm using the potentiometer at any time while the system is on. If the flame sensor detects a flame within the specified distance, the alarm is triggered and the red LED and active buzzer are activated, while the 7-segment display shows the letter "F".
