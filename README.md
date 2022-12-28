@@ -2,7 +2,7 @@
 # Arduino Fire Alarm System
 This project is a simple yet effective fire alarm system that uses an Arduino board and a few key components to detect flames and alert the user of potential danger.
 ## Photos
-![1672155059772](https://user-images.githubusercontent.com/77233507/209700299-f2a272f1-5ade-4fc9-844b-7d535a48f43b.jpg)
+![image3646](https://user-images.githubusercontent.com/77233507/209828144-b8996c96-684b-41f6-9ecc-2b53a2509434.png)
 
 
 ## Hardware Components
@@ -32,7 +32,8 @@ To use the fire alarm system, follow these steps:
 4. If the flame sensor detects a flame within the specified distance, the alarm will be triggered.
 
 ## Circuit Diagram
-![fire-alarm-display-tinkercad](https://user-images.githubusercontent.com/77233507/209581397-067f6db9-ad18-45d5-9741-3952dfcee302.PNG)
+![Circuit Diagram Tinkercad](https://user-images.githubusercontent.com/77233507/209828299-fa2bf7d7-e8c9-42a6-b6b2-51c26cdf805e.png)
+
 
 ## Cloning and Uploading This Repository to an Arduino Board
 
