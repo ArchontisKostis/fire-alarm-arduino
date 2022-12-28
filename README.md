@@ -68,7 +68,7 @@ Once the upload process is complete, the code will be running on your Arduino bo
 This fire alarm system is a homemade project and **has not been tested or certified by any official body**. It is intended for educational and experimental purposes only and **should not be relied upon as a sole means of fire detection**. \
 If you detect a fire using this system, **you should immediately evacuate the area and call emergency services**. \
 \
-**The developer of this system is not responsible for any damages or injuries that may result from the use of this system. Use at your own risk.**
+**The developer of this system is not responsible for any damages or injuries that may result from the use of this system/software. Use at your own risk.**
 
 ## 💻 Further Reading
 For more information on using Git and Github, you can refer to the [Git Documentation](https://git-scm.com/doc) and the [Github Documentation](https://docs.github.com/). \
