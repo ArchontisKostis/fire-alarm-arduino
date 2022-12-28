@@ -33,7 +33,8 @@ To use the fire alarm system, follow these steps:
 4. If the flame sensor detects a flame within the specified distance, the alarm will be triggered.
 
 ## 🛠 Circuit Diagram
-![Circuit Diagram Tinkercad](https://user-images.githubusercontent.com/77233507/209828299-fa2bf7d7-e8c9-42a6-b6b2-51c26cdf805e.png)
+View on [Tinkercad](https://www.tinkercad.com/things/ktwTRIdclBs-arduino-fire-alarm-system). <br>
+![Circuit Diagram Tinkercad](https://user-images.githubusercontent.com/77233507/209828299-fa2bf7d7-e8c9-42a6-b6b2-51c26cdf805e.png) 
 
 
 ## 👩🏻‍💻 Cloning and Uploading This Repository to an Arduino Board
