@@ -78,4 +78,4 @@ For more information on using Git and Github, you can refer to the [Git Document
 For more information on using Arduino, you can refer to the [Arduino Documentation](https://docs.arduino.cc/) and the [Arduino Reference](https://www.arduino.cc/reference/en/)
 
 ## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This is an Open Source project licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
